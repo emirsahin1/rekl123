@@ -12,7 +12,7 @@
             return;
         }
         ads.forEach(function (ad) {
-            var video = ad.video ? `<video class="reklam-video" src="${ad.video}" type="video/webm" muted playsinline autoplay></video>` : '';
+            var video = ad.video ? `<video class="reklam-video" src="${ad.video}" type="video/webm" muted playsinline autoplay loop></video>` : '';
 
             var $card = $(`
             <a class="reklam-card" href="${ad.tiklama_url}" target="_blank" rel="noopener noreferrer"">
