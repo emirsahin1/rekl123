@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-sw9eb32fh%taw1)f67c!=m9_p039+o(md9-_w9w(z0l6!5a0yi
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = ['*']
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
