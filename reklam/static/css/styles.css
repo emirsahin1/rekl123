@@ -1,0 +1,62 @@
+/* Basic reset */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+/* Desktop shows main content; mobile hides it */
+#desktop-content {
+    display: block;
+    padding: 24px;
+}
+
+
+/* Mobile ads container initially hidden on desktop */
+#mobile-ads {
+    display: none;
+    padding: 16px;
+}
+
+/* Responsive switch: at <= 768px, hide desktop and show ads */
+@media (max-width: 768px) {
+    #desktop-content {
+        display: none;
+    }
+
+    #mobile-ads {
+        display: block;
+    }
+}
+
+.reklam-liste {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.reklam-card {
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    /* light gray */
+    text-decoration: none;
+    color: inherit;
+    align-items: center;
+    width: 100%;
+}
+
+.reklam-video {
+    width: 100%;
+    height: auto;
+    flex: 0 0 auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
