@@ -3,6 +3,8 @@
     box-sizing: border-box;
 }
 
+html { background: black!important; }
+
 body {
     margin: 0;
     font-family: Inter, sans-serif;
