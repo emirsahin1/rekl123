@@ -129,11 +129,11 @@
 
   $(document).ready(init);
 
-  $(window).on('resize', function () {
-    if (isMobile() && $('#reklam-liste').children().length === 0) {
-      loadAds();
-    }
-  });
+  // $(window).on('resize', function () {
+  //   if (isMobile() && $('#reklam-liste').children().length === 0) {
+  //     loadAds();
+  //   }
+  // });
 
   // ----- EVENTS -----
   // Clicking any ad X removes ALL ads and begins popup sequence
